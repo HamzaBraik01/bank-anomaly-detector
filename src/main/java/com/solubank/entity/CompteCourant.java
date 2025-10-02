@@ -3,8 +3,8 @@ package com.solubank.entity;
 import java.math.BigDecimal;
 
 
-public final class CompteCourant extends Compte{
-    private final BigDecimal decouvertAutorise;
+public final class CompteCourant extends Compte {
+    private BigDecimal decouvertAutorise;
 
     public CompteCourant(Long id, String numero, BigDecimal solde, Long idClient, BigDecimal decouvertAutorise) {
         super(id, numero, solde, idClient);
@@ -23,5 +23,4 @@ public final class CompteCourant extends Compte{
     public String getTypeCompte() {
         return "COURANT";
     }
-
 }
