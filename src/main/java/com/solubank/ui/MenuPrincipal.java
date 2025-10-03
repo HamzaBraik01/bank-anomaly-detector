@@ -17,9 +17,7 @@ import java.util.List;
 import java.util.Optional;
 import java.util.Scanner;
 
-/**
- * Interface utilisateur principale pour l'application bancaire
- */
+
 public class MenuPrincipal {
     
     private final Scanner scanner;
