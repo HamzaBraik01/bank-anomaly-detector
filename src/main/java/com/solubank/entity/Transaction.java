@@ -3,10 +3,7 @@ package com.solubank.entity;
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
 
-/**
- * Représente une transaction bancaire
- * Utilise record pour l'immutabilité
- */
+
 public record Transaction(
     Long id,
     LocalDateTime date,
