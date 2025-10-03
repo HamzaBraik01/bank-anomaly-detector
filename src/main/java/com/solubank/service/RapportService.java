@@ -226,7 +226,7 @@ public class RapportService {
         }
         
         if (compteMinSolde.isPresent()) {
-            rapport.append(String.format("Compte avec le solde minimum: %s (%s €)\n", 
+            rapport.append(String.format("Compte avec le solde minimum: %s (%s DH)\n", 
                     compteMinSolde.get().getNumero(), compteMinSolde.get().getSolde()));
         }
         
