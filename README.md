@@ -352,6 +352,8 @@ graph TB
 
 ### 🗂️ Diagramme de Classes
 
+![Diagramme de Classes](docs/diagrammes/Diagramme%20vierge.png)
+
 ```mermaid
 classDiagram
     class Client {
@@ -478,22 +480,7 @@ TOTAL: 268 transactions pour un volume de 3,680,000.00 DH
 
 ---
 
-## 🚀 Optimisations et Performance
-
-### 📈 Améliorations Implementées
-- 🔍 **Indexation Base de Données** : Index sur colonnes fréquemment requêtées
-- 💾 **Cache Connexions** : Réutilisation des connexions DB
-- 🌊 **Stream API** : Traitement efficace des collections
-- 📊 **Requêtes Optimisées** : Minimisation des appels base
-
-### 🔄 Possibilités d'Extension
-- 🌐 **API REST** : Exposition des services
-- 📱 **Interface Web** : Frontend moderne
-- 🔔 **Notifications** : Email/SMS automatiques
-- 📊 **Dashboard** : Visualisation temps réel
-- 🤖 **IA/ML** : Détection avancée d'anomalies
-
----
+## 🐛 Dépannage
 
 <div align="center">
 
