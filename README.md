@@ -354,56 +354,6 @@ graph TB
 
 ![Diagramme de Classes](docs/diagrammes/Diagramme%20vierge.png)
 
-```mermaid
-classDiagram
-    class Client {
-        +Long id
-        +String nom
-        +String email
-    }
-    
-    class Compte {
-        <<sealed>>
-        +Long id
-        +String numero
-        +BigDecimal solde
-        +Long idClient
-        +getTypeCompte() String
-    }
-    
-    class CompteCourant {
-        +BigDecimal decouvertAutorise
-        +getTypeCompte() String
-    }
-    
-    class CompteEpargne {
-        +BigDecimal tauxInteret
-        +getTypeCompte() String
-    }
-    
-    class Transaction {
-        +Long id
-        +LocalDateTime date
-        +BigDecimal montant
-        +TypeTransaction type
-        +String lieu
-        +Long idCompte
-    }
-    
-    class TypeTransaction {
-        <<enumeration>>
-        VERSEMENT
-        RETRAIT
-        VIREMENT
-    }
-    
-    Client ||--o{ Compte : possède
-    Compte ||--o{ Transaction : contient
-    Compte <|-- CompteCourant
-    Compte <|-- CompteEpargne
-    Transaction --> TypeTransaction : utilise
-```
-
 ### 🔄 Diagramme de Flux - Détection d'Anomalies
 
 ```mermaid
